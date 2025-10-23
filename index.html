@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="tituloTrabajo">Lista de Tareas</h1>
+    </header>
+
+    <nav>
+        <a href="#paraTitlo">Titulo</a>
+    </nav>
+
+    <main>
+        <div class="paraTitulo">
+            <label for="tituloTarea">Título de la tarea: </label>
+            <input type="text" id="tituloTarea" name="tituloTarea" required>
+        </div>
+        
+        <div class="paraFecha">
+            <label for="fechaLimite">Fecha Límite:</label>
+            <input type="date" id="fechaLimite" name="fechaLimite" required>
+        </div>
+        
+        <div class="paraPrioridad">
+            <label>Prioridad:</label>
+            <input type="radio" id="prioridadBaja" name="prioridad" value="Baja">
+            <label for="prioridadBaja">Baja</label>
+            
+            <input type="radio" id="prioridadMedia" name="prioridad" value="Media">
+            <label for="prioridadMedia">Media</label>
+            
+            <input type="radio" id="prioridadAlta" name="prioridad" value="Alta">
+            <label for="prioridadAlta">Alta</label>
+        </div>
+
+        <button id="agregarBoton">Agregar</button>
+
+
+        <ul id="lista"></ul>
+        <p id="mensaje"></p>
+        
+    </main>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
