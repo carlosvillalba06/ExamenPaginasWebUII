@@ -1,0 +1,12 @@
+.tituloTrabajo{
+    color: blue;
+}
+
+.btnAgregar{
+
+    background-color: aqua;
+}
+.tarea-completa {
+    text-decoration: line-through; 
+    color: #888; 
+}
